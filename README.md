@@ -12,6 +12,86 @@ We will train two kinds of models, DreamBooth and LoRA. Both of them only requir
 ### Install Stable Diffusion Locally
 As a Macbook user with M1/M2 chip, I suggest follow [this Manderine tutorial](https://hossie.notion.site/Stable-Diffusion-MacBook-M1-M2-dda94dc6d59943ea8bc4108897642637) or [this English GitHub](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon#new-install) for installation on Apple Silicon.
 
+First, open terminal on Mac, check python version:
+
+```python
+python3 --version
+```
+
+create virtual environment, download right version of python: 3.10.6, I named the virtual environment as SDW:
+```python
+conda create -n SDW python=3.10.6 -y
+```
+
+activate virtual environment SDW
+```python
+conda activate SDW
+```
+
+check SDW python version to check if the version is 3.10.6:
+```python
+python --version
+```
+
+Manually create a folder to clone Stable Diffusion. In my case, I created a folder named SDW on desktop,
+
+after the folder has been created, cd to the folder in termonal:
+```python
+cd ~/Desktop/SDW
+```
+
+Clone github from https://github.com/AUTOMATIC1111/stable-diffusion-webui.git:
+```python
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+```
+
+Move to stable-diffusion-webui in SDW folder:
+```python
+cd stable-diffusion-webui
+```
+
+Install requirments in stable-diffusion-webui file
+```python
+pip install -r requirements.txt
+```
+
+Now go to [Hugging Face](https://huggingface.co/models) or [CIVITAI](https://civitai.com/models) to download checkpoint model then put it into model folder:
+
+path: SDW/stable-diffusion-webui/models/Stable-diffusion
+
+or download LoRA or other kinds of models then put into the right folder. SDW/stable-diffusion-webui/models/LoRA or other path for each kind of model.
+
+(Note: checkpoint model is necessary for generate images, so you need to have at least one)
+
+Now you can run SD model locally
+```python
+./webui.sh
+```
+
+### To terminate Stable Diffusion locally
+
+Run ```control + c``` in your terminal if you want to terminate SD
+
+### To restart Stable Diffusion locally
+
+
+Activate virtual environment SDW
+```python
+conda activate SDW
+```
+
+Move to stable-diffusion-webui
+```python
+cd ~/Desktop/SDW/stable-diffusion-webui
+```
+
+Run SD model
+```python
+./webui.sh
+```
+
+
+
 ### Create a vitual environment on RunPod
 Or we can use Stable Diffusion via [RunPod](https://www.runpod.io/). Follow [this tutorial](https://www.youtube.com/watch?v=QN1vdGhjcRc&list=PL_pbwdIyffsnDMmNTzopgN6kYDS2KSv-s&ab_channel=SECourses).
 
