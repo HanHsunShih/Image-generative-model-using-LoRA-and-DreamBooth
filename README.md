@@ -97,7 +97,7 @@ Run SD model
 
 
 ### Create a vitual environment on RunPod
-Or we can use Stable Diffusion via [RunPod](https://www.runpod.io/). Follow [this tutorial](https://www.youtube.com/watch?v=QN1vdGhjcRc&list=PL_pbwdIyffsnDMmNTzopgN6kYDS2KSv-s&ab_channel=SECourses).
+Or we can use Stable Diffusion via [RunPod](https://www.runpod.io/). Follow [this tutorial](https://www.youtube.com/watch?v=QN1vdGhjcRc&list=PL_pbwdIyffsnDMmNTzopgN6kYDS2KSv-s&ab_channel=SECourses) or [this](https://www.youtube.com/watch?v=a8WESfPwlYw&t=13s&ab_channel=SECoursesv) shorter one.
 
 On RunPod, we can chose GPU suitable for our project, I chose RTX 4090 since it's much faster, but also cost more money.
 In my project, I use local Stable Diffusion Webui to run Stable Diffusion when there's no GPU assigned to my RunPod, which happens very often. (Or when I want to save money💸) 
@@ -112,6 +112,11 @@ We will build two kinds of dataset:
 
 - **Dreambooth dataset**: images only (20-50 images)
 - **LoRA dataset**: images + .txt prompt file for each image (20-50 paired train data)
+
+For building a dataset, quality is much important than quantity. I chose images which have similar style, but also diverse enough in terms of colour palatte, compositon, topic, etc.
+
+<img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/DreamBooth%20dataset%2010%20images.png" width="800">
+
 ### Image dataset
 Train images for SD1.5 require 512*512 pixels dimention, [BIRME](https://www.birme.net/) is an useful website to batch process photos. It can resize your images to any specific dimension and crop them proportionately if necessary.
 
@@ -159,7 +164,7 @@ Following is the outcome of LoRA I trained combined with 3 different checkpoint 
 
 ## Image generation
 
-Here's final outcome of my project, I used DreamBooth checkpoint followed by 2 LoRA models. The platform I use for this image generation is RunPod.
+Here's final outcome of my project, I used DreamBooth checkpoint followed by 2 LoRA models. The platform I use for this image generation was RunPod.
 
 <img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/final%20outcome.png" width="800">
 
