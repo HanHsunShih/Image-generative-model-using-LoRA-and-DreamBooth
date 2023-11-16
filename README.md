@@ -72,6 +72,10 @@ Now you can run SD model locally
 ./webui.sh
 ```
 
+After install successfully, Stable Diffusion Webui will automatically create a new tab in your browser.
+
+<img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/Webui.png" width="800" alt="alt text">
+
 ### To terminate Stable Diffusion locally
 
 Run ```control + c``` in your terminal if you want to terminate SD
@@ -164,6 +168,12 @@ Following is the outcome of LoRA I trained combined with 3 different checkpoint 
 
 ## Image generation
 
+### Optimizers
+When generate images in Stable Diffusion Webui, you can choose different optimizers for different style of outcome.
+
+<img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/optimizers.png" width="800">
+
+### Final Outcome
 Here's final outcome of my project, I used DreamBooth checkpoint followed by 2 LoRA models. The platform I use for this image generation was RunPod.
 
 <img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/final%20outcome.png" width="800">
