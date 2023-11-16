@@ -100,7 +100,7 @@ Run SD model
 Or we can use Stable Diffusion via [RunPod](https://www.runpod.io/). Follow [this tutorial](https://www.youtube.com/watch?v=QN1vdGhjcRc&list=PL_pbwdIyffsnDMmNTzopgN6kYDS2KSv-s&ab_channel=SECourses) or [this](https://www.youtube.com/watch?v=a8WESfPwlYw&t=13s&ab_channel=SECoursesv) shorter one.
 
 On RunPod, we can chose GPU suitable for our project, I chose RTX 4090 since it's much faster, but also cost more money.
-In my project, I use local Stable Diffusion Webui to run Stable Diffusion when there's no GPU assigned to my RunPod, which happens very often. (Or when I want to save money💸) 
+In my project, I use local Stable Diffusion Webui to run Stable Diffusion when there's no GPU assigned to my RunPod, which happens very often. (Or when I want to save money💸, RTX 4090 GPU with 24 GB VRAM cost 0.74$ per hour) 
 
 <img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/0%20GPU%20assigned.png" width="400" alt="alt text">
 
