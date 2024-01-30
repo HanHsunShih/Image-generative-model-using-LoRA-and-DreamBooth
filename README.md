@@ -5,6 +5,8 @@ Fine-Tuning Diffusion Models with Small Datasets Using DreamBooth and LoRA for B
 
 <img src="https://github.com/HanHsunShih/Image-generative-model-using-LoRA-and-DreamBooth/blob/main/images/messageImage_1699447751593.jpg" width="400" alt="alt text">
 
+In this project, I utilized approximately 40 illustrations I had previously created as a small dataset. By applying fine-tuning techniques, I successfully developed models based on LoRA and Dreambooth. These models were able to efficiently generate illustrations that matched my unique personal style.
+
 These is the guild of how to use stable diffusion 1.5 to train customize models. 
 We will train two kinds of models, DreamBooth and LoRA. Both of them only require 20-50 train images(DreamBooth) or paired train data(LoRA).
 - DreamBooth checkpoint: a base model for generate images in Stable Diffusion, which is always 2-7 GB. In every image generation, you can only choose one checkpoint model.
